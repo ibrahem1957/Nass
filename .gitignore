@@ -1,0 +1,76 @@
+# Python / tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Secrets and local configuration (only the placeholder template is tracked)
+.env
+.env.*
+!.env.example
+**/.streamlit/secrets.toml
+*.pem
+*.key
+
+# Private development and evaluation assets (distributed separately, never published)
+tests/
+lab/fixtures/
+lab/config/airgap/
+lab/config/api_synthetic_documents.toml
+lab/config/e2d_traffic_evaluation.toml
+docs/local/
+src/
+reference/
+# private overlay files that are copied into the application tree
+lab/README.md
+lab/requirements-lab.txt
+requirements-dev.txt
+lab/app/pages/5_Errors.py
+lab/app/pages/8_Two_Stage_API_Evaluation.py
+lab/core/bench.py
+lab/core/e1b_bench.py
+lab/core/e2/e2_bench.py
+lab/core/e2/library.py
+lab/core/e2/api/batch_export.py
+lab/core/e2/api/batch_report.py
+runpod/run_qari_v2.py
+
+# Run outputs and generated data (document content, OCR text, endpoint hosts)
+results/
+agenticdoc/
+automatic_extraction/
+hybrid_pdf_extraction/
+run_*/
+lab_exports/
+tmp/
+*.log
+logs/
+*.zip
+
+# Model weights and caches (download separately)
+models/
+*_infer/
+*.pdiparams
+*.pdmodel
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.onnx
+hf/
+.cache/
+huggingface/
+
+# Documents and datasets
+*.pdf
+*.docx
+*.csv
+*.jsonl
